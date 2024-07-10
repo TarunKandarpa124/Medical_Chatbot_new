@@ -1,0 +1,216 @@
+:root {
+  --body-bg: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  --msger-bg: black;
+  --border: 2px solid #ddd;
+  --left-msg-bg: #ececec;
+  --right-msg-bg: #579ffb;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width : 100%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  animation : animate 30s ease-in-out infinite;
+}
+@keyframes animate {
+  0%,100% {
+    background-image : url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZdrs8if0CY_ZRVJhBf4C3ZJGtj6setHdFnA&s");
+  }
+  25% {
+    background-image : url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz_vO0uMI8-3WVFq8WtW2VvSwvscD6FcQBsw&s");
+  }
+  50% {
+    background-image : url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7A0YPhrcCUiazPiCR_pSR5Ns7GCW-DkapHw&s");
+  }
+  75% {
+    background-image : url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGWYyoS40jtRXWjX6Jc3CMOkEnUatQWCgiNw&s");
+  }
+}
+
+.msger {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 867px;
+  margin: 25px 10px;
+  height: calc(100% - 50px);
+  border: var(--border);
+  border-radius: 15px;
+  background-image: url("https://acropolium.com/img/articles/chatbots-in-healthcare/img01.jpg");
+  background-size: cover;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.msger-header {
+  font-size: 1.2em;
+  justify-content: space-between;
+  padding: 15px;
+  text-align: center;
+  border-bottom: var(--border);
+  background: #fff;
+  color: #333;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.msger-header-title {
+  font-weight: bold;
+}
+
+.msger-chat {
+  flex: 1;
+  overflow-y: auto;
+  padding: 15px;
+}
+
+.msger-chat::-webkit-scrollbar {
+  width: 8px;
+}
+
+.msger-chat::-webkit-scrollbar-track {
+  background: #f5f5f5;
+}
+
+.msger-chat::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+.msg {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 15px;
+}
+
+.msg-img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  background: #ddd;
+  border-radius: 50%;
+}
+
+.msg-bubble {
+  max-width: 65%;
+  padding: 15px;
+  border-radius: 20px;
+}
+
+.msg-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.msg-info-name {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.msg-info-time {
+  font-size: 0.9em;
+}
+
+.left-msg .msg-bubble {
+  border-bottom-left-radius: 0;
+  background: #ececec;
+}
+
+.left-msg .msg-img {
+  background-image: url("https://uxwing.com/wp-content/themes/uxwing/download/communication-chat-call/chatbot-icon.png");
+}
+
+.right-msg {
+  flex-direction: row-reverse;
+}
+
+.right-msg .msg-bubble {
+  background: blue;
+  color: white;
+  border-bottom-right-radius: 0;
+}
+
+.msger-inputarea {
+  display: flex;
+  padding: 15px;
+  border-top: var(--border);
+  background: #fff;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.msger-input {
+  flex: 1;
+  background: #f5f5f5;
+  border-radius: 20px;
+  font-size: 16px; /* Adjust font size as needed */
+  padding: 10px 20px; /* Adjust padding as needed */
+}
+
+.msger-send-btn {
+  margin-left: 10px;
+  background: url('https://static.thenounproject.com/png/1054386-200.png') no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+
+.msger-send-btn:hover {
+  background: #0056b3;
+}
+.msg.left-msg .msg-img {
+ background-image : url("https://uxwing.com/wp-content/themes/uxwing/download/communication-chat-call/chatbot-icon.svg");
+}
+.msg-text{
+ font-family: Arial, sans-serif;
+ font-weight: bold;
+}
+.get-loc {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  background-image: url("https://images.all-free-download.com/images/thumbjpg/map_pin_sign_icon_flat_silhouette_contrast_rounded_shape_6921980.jpg");
+  background-size: cover;
+}
+
+.get-loc:hover {
+  background-color: #0056b3;
+}
+.msger-inputarea .temp {
+ display : inline-block;
+}

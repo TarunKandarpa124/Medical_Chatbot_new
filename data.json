@@ -1,0 +1,192 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["Hi there", "How's it going?", "Is anyone online?", "Hey", "Hola", "Hello", "Good day"],
+      "responses": ["Hey, good to see you!", "I'm doing well, thanks. How about you?", "Hi there! How can I assist you today?"]
+    },
+    {
+      "tag": "name",
+      "patterns": ["I go by <name>", "Call me <name>", "Name's <name>", "<name> here", "My name is <name>"],
+      "responses": ["Hi! What brings you here?", "Nice to meet you! How can I help?"]
+    },
+    {
+      "tag": "what_name",
+      "patterns": ["What do they call you?", "Your name?", "Who are you?", "Tell me about yourself"],
+      "responses": ["Hello! I'm your personal medical assistant bot. I can provide information about general diseases and help you find hospitals and pharmacies in your area. Just let me know your location and how I can assist you!"]
+    },
+    {
+      "tag": "fever_info",
+      "patterns": ["Tell me about dealing with fever", "Causes of a fever", "Symptoms of having a fever", "How to ease a fever", "What causes fever?", "How can I prevent fever?"],
+      "responses": [
+        "Causes of fever can vary, including infections and inflammatory conditions. Prevention measures include practicing good hygiene and staying vaccinated."
+      ]
+    },
+    {
+      "tag": "cough_info",
+      "patterns": ["Tell me about managing a cough", "Common causes of coughing", "Recognizing cough symptoms", "Ways to treat a persistent cough", "What causes cough?", "How can I prevent cough?"],
+      "responses": [
+        "Coughs can result from various factors. Prevention involves avoiding irritants and maintaining a healthy lifestyle."
+      ]
+    },
+    {
+      "tag": "headache_info",
+      "patterns": ["What to do for a headache", "Causes of frequent headaches", "Symptoms of a tension headache", "Tips for relieving a headache", "What causes headaches?", "How can I prevent headaches?"],
+      "responses": [
+        "Headaches can have various causes, including stress and dehydration. Prevention involves managing stress, staying hydrated, and maintaining a healthy diet."
+      ]
+    },
+    {
+      "tag": "diabetes_info",
+      "patterns": ["Educate me about diabetes", "Common causes of diabetes", "Spotting diabetes symptoms", "How to manage diabetes", "What causes diabetes?", "How can I prevent diabetes?"],
+      "responses": [
+        "Diabetes is a chronic disease that occurs when the body has abnormally high levels of glucose, also known as blood sugar. Diabetes is often caused by a combination of genetic and lifestyle factors. Prevention includes maintaining a healthy weight, regular exercise, and a balanced diet."
+      ]
+    },
+    {
+      "tag": "heart_disease_info",
+      "patterns": ["Tell me about heart diseases", "What causes heart issues", "Recognizing heart disease symptoms", "Preventive measures for heart health", "What causes heart disease?", "How can I prevent heart disease?"],
+      "responses": [
+        "Heart disease can be caused by factors like high blood pressure and high cholesterol. Prevention includes regular exercise, a heart-healthy diet, and avoiding tobacco."
+      ]
+    },
+    {
+      "tag": "asthma_info",
+      "patterns": ["Give me insights on asthma", "Triggers for asthma attacks", "Identifying asthma symptoms", "Methods for managing asthma", "What causes asthma?", "How can I prevent asthma attacks?"],
+      "responses": [
+        "Asthma is a chronic (long-term) condition that affects the airways in the lungs. The airways are tubes that carry air in and out of your lungs. If you have asthma, the airways can become inflamed and narrowed at times. This makes it harder for air to flow out of your airways when you breathe out."
+      ]
+    },
+    {
+      "tag": "flu_info",
+      "patterns": ["Share details about the flu", "Common flu causes", "Treatment options for the flu", "What causes the flu?", "How can I prevent the flu?"],
+      "responses": [
+        "Flu is a contagious respiratory illness caused by influenza viruses that infect the nose, throat, and sometimes the lungs. It can cause mild to severe illness, and at times can lead to death. The best way to prevent flu is by getting a flu vaccine each year."
+      ]
+    },
+    {
+      "tag": "flu_info",
+      "patterns": ["Share details about the flu", "Common flu causes", "Treatment options for the flu", "What causes the flu?", "How can I prevent the flu?"],
+      "responses": [
+        "Flu is a contagious respiratory illness caused by influenza viruses that infect the nose, throat, and sometimes the lungs. It can cause mild to severe illness, and at times can lead to death. The best way to prevent flu is by getting a flu vaccine each year."
+      ]
+    },{
+      "tag": "flu_symptoms",
+      "patterns": ["what are the symptoms of flu"],
+      "responses": [
+        "Flu can cause mild to severe illness, and at times can lead to death. Flu symptoms usually come on suddenly. People who have flu often feel some or all of these signs and symptoms:\n\nfever or feeling feverish/chills\n\ncough\n\nsore throat\n\nrunny or stuffy nose\n\nmuscle or body aches\nheadaches\n\nfatigue (tiredness)\n\nsome people may have vomiting and diarrhea, though this is more common in children than adults."
+      ]
+    },
+    {"tag": "goodbye",
+     "patterns": ["Goodbye for now", "Signing off", "Catch you later", "Farewell", "Until we chat again"],
+     "responses": ["See you around!", "Take care! If you need anything, I'm here.", "Goodbye! Come back whenever you'd like."],
+     "context": [""]
+    },
+    {"tag": "thanks",
+     "patterns": ["Thanks a bunch", "Thank you so much", "Appreciate your help", "Awesome, thanks a lot", "Thanks for assisting me"],
+     "responses": ["You're welcome!", "Anytime! If you have more questions, feel free to ask.", "My pleasure. Let me know if there's anything else I can do for you."],
+     "context": [""]
+    },
+    {"tag": "noanswer",
+     "patterns": ["I'm lost", "I don't understand", "Can you explain that differently?", "I'm confused"],
+     "responses": ["Sorry if I'm not clear. Could you provide more details or ask in a different way?", "I might need more information to assist. Can you elaborate?", "Not sure I got that right. Could you rephrase or provide more context?"],
+     "context": [""]
+    },
+    {"tag": "options",
+     "patterns": ["How can you assist me?", "Tell me about your capabilities", "What services do you provide?", "How can you be helpful?", "What kind of support do you offer?"],
+     "responses": ["I can guide you through Adverse drug reaction lists, and provide information on Hospitals and Pharmacies.", "Offering support for Adverse drug reactions and assistance in finding Hospitals and Pharmacies."],
+     "context": [""]
+    },
+    {"tag": "adverse_drug",
+     "patterns": ["Guide me on checking Adverse drug reactions", "Open the adverse drugs module", "List drugs causing adverse behavior", "Suggest drugs suitable for a patient with adverse reactions", "Which drugs don't have adverse reactions?" ],
+     "responses": ["An adverse drug reaction (ADR) is an injury caused by taking medication. It can result from a single dose or prolonged administration of a drug or from the combination of two or more drugs."],
+     "context": [""]
+    },
+    {"tag": "list_of_adverse_drug",
+     "patterns": ["list the types of adverse drug reactions"],
+     "responses": ["(1) Dose-related adverse drug reactions: For example, a person taking a medication to reduce high blood pressure may feel dizzy or light-headed if the medication reduces blood pressure too much. A person with diabetes may develop weakness, sweating, nausea, and palpitations if insulin or another antidiabetic medication reduces the blood sugar level too much. This type of adverse drug reaction is usually predictable but sometimes unavoidable. shorten this please\n\n(2) Allergic drug reactions: are not dose-related but require prior exposure to a drug. Allergic reactions develop when the body's immune system develops an inappropriate reaction to a drug (sometimes referred to as sensitization). After a person is sensitized, later exposures to the drug produce one of several different types of allergic reaction. Sometimes doctors do skin tests to help predict allergic drug reactions.\n\n(3) Idiosyncratic adverse drug reactions: result from mechanisms that are not currently understood. This type of adverse drug reaction is largely unpredictable. Examples of such adverse drug reactions include rashes, jaundice, anemia, a decrease in the white blood cell count, kidney damage, and nerve injury that may impair vision or hearing. These reactions tend to be more serious but typically occur in a very small number of people. "],
+     "context": [""]
+    },
+    {"tag": "stop_drug",
+     "patterns": ["How to prevent drug addiction","How to quit taking drugs" ],
+     "responses": ["While there is no one way or guaranteed way to prevent someone from abusing drugs and alcohol, there are things that everyone can do to prevent substance abuse.\n\n(1) Consult the nearest hospital\n\n(2) Understand how substance abuse develops.\n\n(3) Avoid Temptation and Peer Pressure.\n\n(4) Seek help for mental illness.\n\n(5) Examine the risk factors.\n\n(6)  Keep a well-balanced life."],
+     "context": [""]
+    },
+    {"tag": "blood_pressure",
+     "patterns": ["Open the blood pressure module", "Tasks related to blood pressure", "Entering blood pressure data", "I want to log blood pressure results", "Managing blood pressure data" ],
+     "responses": ["https://www.w3schools.com/python/python_tuples.asp"],
+     "context": [""]
+    },
+    {"tag": "blood_pressure_search",
+     "patterns": ["I want to search for blood pressure result history", "Blood pressure for a patient", "Load the patient's blood pressure results", "Show blood pressure results for a patient", "Find blood pressure results by ID" ],
+     "responses": ["Please provide the Patient ID.", "Could you share the Patient ID?"],
+     "context": ["search_blood_pressure_by_patient_id"]
+    },
+    {"tag": "search_blood_pressure_by_patient_id",
+     "patterns": [],
+     "responses": ["Loading the blood pressure results for the patient."],
+     "context": [""]
+    },
+
+    {"tag": "psoriasis",
+     "patterns": ["What is psoriasis","Tell me about psoriasis","How does psoriasis occur", "Causes of psoriasis", "Preventing psoriasis"],
+     "responses": ["Psoriasis is a common skin disorder that results in thick, red, bumpy patches covered with silvery scales. These patches can appear on various body parts, with common locations being the scalp, elbows, knees, and lower back. Psoriasis is not contagious and may have a genetic component within families. The exact cause is unknown. Preventive measures include maintaining good skin hygiene and managing stress."],
+     "context": [""]
+    },
+    {"tag": "prevent_psoriasis",
+     "patterns": ["I suspect I have psoriasis","How can I prevent psoriasis","Tips for controlling psoriasis", "Causes of psoriasis"],
+     "responses": ["Here are a few measures to manage psoriasis:\n\n(1) Wash hands with warm soapy water,\n\n(2) Apply pressure to stop bleeding,\n\n(3) Consult a doctor for professional advice,\n\n(4) Consider salt baths for relief.\n\nPsoriasis causes are not fully understood, but genetics and the immune system play a role."],
+     "context": [""]
+    },
+    {"tag": "hepatitis_A",
+     "patterns": ["What is hepatitis A","Tell me about hepatitis A","Do you have any information about hepatitis A", "Causes of hepatitis A", "Preventing hepatitis A"],
+     "responses": ["Hepatitis A is a highly contagious liver infection caused by the hepatitis A virus. This virus is one of several types of hepatitis viruses that lead to inflammation and affect the liver's ability to function. The most common cause is consuming contaminated food or water. Prevention includes vaccination, practicing good hygiene, and avoiding consuming raw or undercooked shellfish."],
+     "context": [""]
+    },
+    {"tag": "prevent_hepatitis_A",
+     "patterns": ["How can I prevent hepatitis A","Any preventive measures for hepatitis A","What prec  autions can I take to control hepatitis A"],
+     "responses": ["(1) Consult the nearest hospital,\n\n(2) Practice thorough handwashing,\n\n(3) Avoid consumption of fatty and spicy foods,\n\n(4) Follow prescribed medication for prevention"],
+     "context": [""]
+    },
+    {"tag": "paralysis_brain_hemorrhage",
+     "patterns": ["Tell me about paralysis", "Explain brain hemorrhage", "What is brain hemorrhage", "Describe paralysis/brain hemorrhage", "Causes of paralysis/brain hemorrhage", "Preventing paralysis/brain hemorrhage"],
+     "responses": ["Intracerebral hemorrhage (ICH) occurs when blood suddenly bursts into brain tissue, causing damage. Symptoms typically appear suddenly and may include headache, weakness, confusion, and paralysis, particularly on one side of your body. Causes include high blood pressure, trauma, and aneurysms. Prevention involves managing blood pressure, avoiding head injuries, and adopting a healthy lifestyle."],
+     "context": [""]
+    },
+    {"tag": "typhoid",
+     "patterns": ["What is typhoid","Tell me about typhoid","Describe typhoid", "Causes of typhoid", "Preventing typhoid"],
+     "responses": ["Typhoid is an acute illness characterized by fever caused by infection with the bacterium Salmonella typhi. The onset of typhoid fever is insidious, with symptoms such as fever, headache, constipation, malaise, chills, and muscle pain. Diarrhea is uncommon, and vomiting is typically not severe. Causes include contaminated food and water. Prevention involves vaccination, practicing good hygiene, and avoiding consuming raw or undercooked food."],
+     "context": [""]
+    },
+    {"tag": "cancer",
+     "patterns": ["What is cancer","Tell me about cancer","Describe cancer", "Causes of cancer"],
+     "responses": ["Cancer is a disease characterized by the uncontrolled growth and spread of abnormal cells in the body. It can affect various organs and tissues, leading to the formation of tumors. There are many types of cancer, including carcinoma, sarcoma, lymphoma, and leukemia. Carcinomas arise from epithelial cells, sarcomas from connective tissues, lymphomas from lymphocytes, and leukemia from blood-forming cells. Each type of cancer has its own characteristics and requires specific treatments."],
+     "context": [""]
+    },
+    {"tag": "types_cancer",
+     "patterns": ["what are the different types of cancer"],
+     "responses": ["There are many types of cancer, including\n\n(1) carcinoma - arise from epithelial cells\n\n(2) sarcoma - sarcomas from connective tissues\n\n(3) lymphoma -  lymphomas from lymphocytes ,and\n\n(4) leukemia - from blood-forming cells.\n\nEach type of cancer has its own characteristics and requires specific treatments."],
+     "context": [""]
+    },
+    {"tag": "cancer_treatment",
+     "patterns": ["how can cancer be treatment","treatment for cancer","what are the ways to deal with cancer"],
+     "responses": ["Cancer treatment options include:\n\n(1) Surgery. The goal of surgery is to remove the cancer or as much of the cancer as possible.\n\n(2) Chemotherapy. Chemotherapy uses drugs to kill cancer cells.\n\n(3) Radiation therapy. Radiation therapy uses high-powered energy beams, such as X-rays or protons, to kill cancer cells. Radiation treatment can come from a machine outside your body (external beam radiation), or it can be placed inside your body (brachytherapy).\n\n(4) Bone marrow transplant. Your bone marrow is the material inside your bones that makes blood cells from blood stem cells. A bone marrow transplant, also known as a stem cell transplant, can use your own bone marrow stem cells or those from a donor.\n\n(5) Immunotherapy. Immunotherapy, also known as biological therapy, uses your body's immune system to fight cancer. Cancer can survive unchecked in your body because your immune system doesn't recognize it as an intruder. Immunotherapy can help your immune system see the cancer and attack it.\n\n(6) Hormone therapy. Some types of cancer are fueled by your body's hormones. Examples include breast cancer and prostate cancer. Removing those hormones from the body or blocking their effects may cause the cancer cells to stop growing.\n\n(7) Cryoablation. This treatment kills cancer cells with cold. During cryoablation, a thin, wandlike needle (cryoprobe) is inserted through your skin and directly into the cancerous tumor. A gas is pumped into the cryoprobe in order to freeze the tissue. Then the tissue is allowed to thaw. The freezing and thawing process is repeated several times during the same treatment session in order to kill the cancer cells.\n\n(8) Radiofrequency ablation. This treatment uses electrical energy to heat cancer cells, causing them to die. During radiofrequency ablation, a doctor guides a thin needle through the skin or through an incision and into the cancer tissue. High-frequency energy passes through the needle and causes the surrounding tissue to heat up, killing the nearby cells."],
+     "context": [""]
+    },
+    {"tag": "leukemia",
+     "patterns": ["What is leukemia","Tell me about leukemia","Describe leukemia", "Causes of leukemia"],
+     "responses": ["Leukemia is cancer of the body's blood-forming tissues, including the bone marrow and the lymphatic system. Leukemia usually involves the white blood cells. Your white blood cells are potent infection fighters — they normally grow and divide in an orderly way, as your body needs them. But in people with leukemia, the bone marrow produces an excessive amount of abnormal white blood cells, which don't function properly."],
+     "context": [""]
+    },
+    {"tag": "symptoms_leukemia",
+     "patterns": ["What are the general symptoms of leukemia"],
+     "responses": ["Leukemia symptoms vary, depending on the type of leukemia. Common leukemia signs and symptoms include:\n\nFever or chills\n\nPersistent fatigue, weakness\n\nFrequent or severe infections\n\nLosing weight without trying\n\nSwollen lymph nodes, enlarged liver or spleen\n\nEasy bleeding or bruising\n\nRecurrent nosebleeds\n\nTiny red spots in your skin (petechiae)\n\nExcessive sweating, especially at night\n\nBone pain or tenderness"],
+     "context": [""]
+    },
+    {"tag": "common_cold",
+     "patterns": ["What are the ways to deal with common cold"],
+     "responses": ["While there is no cure for the common cold, there are some proven ways to treat your symptoms:\n\n(1) Stay hydrated. Whether its tea, warm water with lemon or broth, drinking warm liquids can be soothing, prevent dehydration and ease congestion.\n\n(2) Gargle with salt water\n\n(3) Over-the-counter decongestants, antihistamines and pain relievers, such as ibuprofen or acetaminophen, can reduce some cold symptoms.\n\n(4) Humidify the air . Cold air holds less moisture than warm air. Dry nostrils are more prone to viruses, and if you’re already sick, dry air can worsen a sore throat.\n\n(5) Rest"],
+     "context": [""]
+    }
+  ]
+}
